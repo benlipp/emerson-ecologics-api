@@ -13,7 +13,7 @@ class ClientTest extends TestCase
     {
         parent::setUp();
         $this->credentials = new Credentials('testUser', 'password', 'apikey');
-        $this->httpClient = null;
+        $this->httpClient = new GuzzleHttp\Client();
     }
 
     public function testClientSyntax()
