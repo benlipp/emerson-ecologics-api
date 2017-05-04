@@ -1,0 +1,25 @@
+{
+    "name": "benlipp/emerson-ecologics-api",
+    "description": "A PHP package for interacting with the Emerson Ecologics API",
+    "keywords": ["emerson", "ecologics", "api"],
+    "license": "DBAD",
+    "authors": [
+        {
+            "name": "Ben Lippincott",
+            "email": "benji.lippincott@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+        "php": ">=5.4",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "EmersonApi\\": "src/"
+        }
+    }
+}
