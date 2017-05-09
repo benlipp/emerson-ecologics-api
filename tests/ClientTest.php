@@ -18,7 +18,7 @@ class ClientTest extends TestCase
 
     public function testClientSyntax()
     {
-        $client = new Client($this->httpClient, $this->credentials);
+        $client = new Client($this->credentials);
         $this->assertTrue(is_object($client));
     }
 

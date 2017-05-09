@@ -14,7 +14,6 @@ class Client
     /**
      * Client constructor.
      *
-     * @param \GuzzleHttp\Client $httpClient
      * @param \EmersonApi\Credentials                             $credentials
      * @param array                                               $options
      */
