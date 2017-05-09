@@ -2,7 +2,7 @@
 
 namespace EmersonApi\Api\OrderService\Models;
 
-class OrderApiLineItem extends BaseModel
+class LineItem extends BaseModel
 {
 
     /**

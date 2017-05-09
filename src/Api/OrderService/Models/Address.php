@@ -4,42 +4,47 @@
 namespace EmersonApi\Api\OrderService\Models;
 
 
-class OrderApiAddress extends BaseModel
+class Address extends BaseModel
 {
 
     /**
      * @var string
      */
-    protected $fullName;
+    public $FullName;
 
     /**
      * @var string
      */
-    protected $line1;
+    public $Line1;
 
     /**
      * @var string
      */
-    protected $line2;
+    public $Line2;
 
     /**
      * @var string
      */
-    protected $city;
+    public $City;
 
     /**
      * State Abbreviation.
      * @var string
      */
-    protected $regionCode;
+    public $RegionCode;
 
     /**
      * @var string
      */
-    protected $countryCode = 'US';
+    public $PostalCode;
 
     /**
      * @var string
      */
-    protected $phoneNumber;
+    public $CountryCode = 'US';
+
+    /**
+     * @var string
+     */
+    public $PhoneNumber;
 }

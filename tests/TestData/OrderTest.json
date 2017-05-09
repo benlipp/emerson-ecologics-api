@@ -1,0 +1,15 @@
+{
+  "LineItems": null,
+  "ShipToAddress": {
+    "FullName": "John Smith",
+    "Line1": "123 Nowhere St",
+    "Line2": null,
+    "City": "Anywhere",
+    "RegionCode": "OH",
+    "PostalCode": "12345",
+    "CountryCode": "US",
+    "PhoneNumber": "1234567890"
+  },
+  "PaymentIdentifier": "Terms",
+  "OrderComments": null
+}

@@ -2,7 +2,7 @@
 
 namespace EmersonApi;
 
-use GuzzleHttp\Client as Guzzle;
+use GuzzleHttp\Client as GuzzleClient;
 
 class Client
 {
@@ -18,9 +18,11 @@ class Client
      * @param \EmersonApi\Credentials                             $credentials
      * @param array                                               $options
      */
-    public function __construct(Guzzle $httpClient, Credentials $credentials, $options = [])
+    public function __construct(Credentials $credentials, $options = [])
     {
-        $this->httpClient = $httpClient;
+        $this->httpClient = new GuzzleClient([
+            'baseUri' => ''
+        ]);
         $this->credentials = $credentials;
         $this->options = $options;
     }

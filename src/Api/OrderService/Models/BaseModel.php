@@ -13,23 +13,17 @@ class BaseModel
      */
     public function __construct($details = null)
     {
-        foreach ($details as $key => $value) {
-            if (property_exists($this, $key))
-            {
-                $this->$key = $value;
+        if ($details) {
+            foreach ($details as $key => $value) {
+                if (property_exists($this, $key)) {
+                    $this->$key = $value;
+                }
             }
         }
     }
 
-    public function __toString()
+    public function toJson()
     {
-        $data = get_object_vars($this);
-
-        $formattedData = [];
-        foreach ($data as $key => $value){
-            $formattedData[ucfirst($key)] = $value;
-        }
-
-        return json_encode($formattedData);
+        return json_encode(get_object_vars($this));
     }
 }
