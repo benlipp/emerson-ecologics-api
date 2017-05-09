@@ -34,16 +34,16 @@ class Order extends BaseModel
 
     /**
      * Order constructor.
-     * @param LineItem[] | null $lineItems
-     * @param Address | null    $shipToAddress
-     * @param string[] | null   $orderComments
+     * @param LineItem[] | null $LineItems
+     * @param Address | null    $ShipToAddress
+     * @param string[] | null   $OrderComments
      */
-    public function __construct($lineItems = null, $shipToAddress = null, $orderComments = null)
+    public function __construct($LineItems = null, $ShipToAddress = null, $OrderComments = null)
     {
         parent::__construct();
-        $this->LineItems = $lineItems;
-        $this->ShipToAddress = $shipToAddress;
-        $this->OrderComments = $orderComments;
+        $this->LineItems = $LineItems;
+        $this->ShipToAddress = $ShipToAddress;
+        $this->OrderComments = $OrderComments;
     }
 
     /**

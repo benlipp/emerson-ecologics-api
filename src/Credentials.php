@@ -10,7 +10,7 @@ class Credentials
     /**
      * @var string
      */
-    protected $username;
+    protected $userName;
 
     /**
      * @var string
@@ -25,14 +25,19 @@ class Credentials
     /**
      * Credentials constructor.
      *
-     * @param $username
+     * @param $userName
      * @param $password
      * @param $apiKey
      */
-    public function __construct($username, $password, $apiKey)
+    public function __construct($userName, $password, $apiKey)
     {
-        $this->username = $username;
+        $this->userName = $userName;
         $this->password = $password;
         $this->apiKey = $apiKey;
+    }
+
+    public function toArray()
+    {
+        return get_object_vars($this);
     }
 }

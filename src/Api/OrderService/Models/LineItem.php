@@ -8,16 +8,16 @@ class LineItem extends BaseModel
     /**
      * @var string
      */
-    protected $itemId;
+    public $ItemId;
 
     /**
      * @var int
      */
-    protected $quantity;
+    public $Quantity;
 
     /**
      * Optional?
      * @var string
      */
-    protected $displayName;
+    public $DisplayName;
 }
